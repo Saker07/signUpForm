@@ -8,6 +8,7 @@
     <title>Sign Up</title>
 </head>
 <body>
+    <script src="script.js" defer></script>
     <div class="leftContainer">
         <div class="logoBanner"><img class="logoImg" src="img/logo.png" alt="random logo"><p class="logoName">GIUNG</p></div>
         <div class="leftFooter"><p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p></div>
@@ -22,27 +23,27 @@
             <fieldset>
                 <div>
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="firstName" class="firstName">
+                    <input type="text" id="firstName" name="firstName" class="firstName" placeholder="Jack" required>
                 </div>
                 <div>
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" name="lastName" class="lastName">
+                    <input type="text" id="lastName" name="lastName" class="lastName" placeholder="Sparrow" required>
                 </div>
                 <div>
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" class="email">
+                    <input type="email" id="email" name="email" class="email" placeholder="example@mail.com" required>
                 </div>
                 <div>
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" class="phoneNumber" pattern="[0-9]{4}-[0-9]{10}">
+                    <input type="tel" id="phoneNumber" name="phoneNumber" class="phoneNumber" placeholder="0000-1234567890" pattern="[0-9]{4}-[0-9]{10}">
                 </div>
                 <div>
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" class="password">
+                    <input type="password" id="password" name="password" class="password" placeholder="*******" required>
                 </div>
                 <div>
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" class="confirmPassword">
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="confirmPassword" placeholder="*******" required>
                 </div>
                 <div class="lineContainer">
                     <div class="line"></div>

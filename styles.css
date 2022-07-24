@@ -124,7 +124,7 @@ input:focus {
     outline-color:rgb(133, 133, 237);
     box-shadow: 0 0 0.2rem black inset;
 }
-input:invalid {
+input:not(:placeholder-shown):invalid {
     outline-style: auto;
     outline-color: red;
 }

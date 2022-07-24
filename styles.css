@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+@font-face{
+    font-family: newfont;
+    src: url(font/PirateViking-1Gajg.otf);
+}
+
+fieldset{
+    border:none;
+}
+body {
+    height:100vh;
+    width: 100vw;
+    display: flex;
+}
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    background-image: url(img/halie-west-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoBanner{
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.logoBanner .logoImg {
+    height:100%;
+}
+.logoBanner p{
+    color: #373435;
+    font-size: 7rem;
+    font-family: newfont, 'Courier New', Courier, monospace
+}
+
+.leftFooter{
+    color:white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.leftFooter a{
+    text-decoration: underline;
+    color:white;
+}
+
+.rightContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 4rem;
+}
+
+.textContainer {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+.textContainer p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    max-width: 60ch;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cursive {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+form {
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+form p{
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+form fieldset {
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+label{
+    letter-spacing: 0.1rem;
+    color: rgb(69, 68, 68);
+}
+input {
+    box-sizing: border-box;
+    padding:0.5rem;
+    width: 20rem;
+}
+input:focus {
+    outline-color:rgb(133, 133, 237);
+    box-shadow: 0 0 0.2rem black inset;
+}
+input:invalid {
+    outline-style: auto;
+    outline-color: red;
+}
+
+.lineContainer {
+    margin-top: 2rem;
+    position:relative;
+}
+.line {
+    left:-4rem;
+    width: 60vw;
+    position: absolute;
+    height:0.2rem;
+    background-image: linear-gradient(rgb(204, 203, 203) , white);
+}
+.createAccountBtn {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    max-width: 20rem;
+    background-color:#596D48;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border:none;
+    padding:1rem;
+    transition: all ease-in 0.1s;
+}
+
+.createAccountBtn:hover {
+    background-color: #3a5d1c;
+}
+.createAccountBtn:active {
+    background-color: #779160;
+}
+.rightContainer a{
+    color:#596D48;
+    text-decoration: none;
+}
